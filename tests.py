@@ -35,7 +35,7 @@ def test_df_unanonymize():
     helper.unanonymize()
     old = df.columns.tolist()
     new = helper.df.columns.tolist()
-    assert any([all(helper.df[old[i]] == df[new[i]]) for i in range(len(old))])
+    assert all([all(helper.df[old[i]] == df[new[i]]) for i in range(len(old))])
 
 
 if __name__ == '__main__':
