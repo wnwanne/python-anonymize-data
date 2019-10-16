@@ -5,7 +5,7 @@ long_description = ''
 with open('./README.md') as f:
     long_description = f.read()
 
-setup(name='fyords',
+setup(name='anonymize_data',
     version=__version__,
     description='A python package for anonymizing datasets.',
     long_description=long_description,
